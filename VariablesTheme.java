@@ -58,7 +58,68 @@ public class VariablesTheme {
         intV--;
         System.out.println("intV = " + intV);
         System.out.println("");
+
+        System.out.println("Perestanovka znacheniy peremennyh arifmeticheskoy operaciey");
+        int int1 = 2,
+            int2 = 5;
+        System.out.println("int1 = " + int1);
+        System.out.println("int2 = " + int2);
+        System.out.println("Peremennye posle perestanovki arrifmeticheskoy operaciey");
+        int1 = int1*int2;
+        int2 = int1/int2;
+        int1 = int1/int2;
+        System.out.println("int1 = " + int1);
+        System.out.println("int2 = " + int2);
+        System.out.println(" ");
+
+        System.out.println("Perestanovka znacheniy peremennyh pobitovo");
+        int int11 = 2;
+        int int22 = 5;
+        System.out.println("int11 = " + int11);
+        System.out.println("int22 = " + int22);
+        int11 = int11 ^ int22;
+        int22 = int11 ^ int22;
+        int11 = int11 ^ int22;
+        System.out.println("Peremennye posle perestanovki pobitovoy operaciey");
+        System.out.println("int11 = " + int11);
+        System.out.println("int22 = " + int22);
+        System.out.println(" ");
+
+        System.out.println("Vyvod simvolov i ih kodov");
+        char s35 = '#';
+        char s38 = '%';
+        char s64 = '@';
+        char s94 = '^';
+        char s96 = '`';
+        byte c35 = 35;
+        byte c38 = 38;
+        byte c64 = 64;
+        byte c94 = 94;
+        byte c96 = 96;
+        System.out.println(s35 + " - " + c35);
+        System.out.println(s38 + " - " + c38);
+        System.out.println(s64 + " - " + c64);
+        System.out.println(s94 + " - " + c94);
+        System.out.println(s96 + " - " + c96 + '\n');
+
+        System.out.println("Vyvod na konsol ASCII-art Duka");
+        char s47 = '/';
+        char c92 = '\\';
+        char s95 = '_';
+        char s40 = '(';
+        char s41 = ')';
+        char s32 = ' ';
+        for(int j = 5; j < 0; j--) {
+            for(int i = j; i < 0; i--) {
+                System.out.print(s32);
+            }
+            System.out.print("/");
+
+            for(int k = 1; k > 11; k+=2) {
+                System.out.print(s32 );
+            }
+            System.out.print(c92 + '\n');
+        }
+        System.out.println(" ");
     }
 }
-
-
